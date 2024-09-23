@@ -24,7 +24,7 @@ body {
 
 nav {
   width: 100%;
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +78,7 @@ button:hover {
 
 /*Contenido Hero*/
 .home-content {
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem 5%;
   display: flex;
   align-items: center;
   height: 83vh;
@@ -86,7 +86,8 @@ button:hover {
 
 .home-container {
   align-items: center;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .home-container h1 {
@@ -99,7 +100,6 @@ button:hover {
   color: #fff;
   padding-bottom: 5px;
 }
-
 
 /* Sección ¿Por qué elegirnos? */
 #porque-elegirnos {
@@ -159,6 +159,7 @@ button:hover {
   font-size: 1em;
   color: #555;
 }
+
 /* Estilos para Sección de Testimonios */
 #testimonios {
   background-color: #2d9cdb;
@@ -185,6 +186,7 @@ button:hover {
   border-radius: 10px;
   padding: 20px;
   max-width: 300px;
+  width: 100%; /* Hacerlo responsive */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -323,4 +325,63 @@ button:hover {
 .footer-section p:last-child {
   font-size: 0.8em;
   color: #aaa;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .features-container {
+    justify-content: center; /* Centrar contenido en pantallas más pequeñas */
+  }
+  
+  .feature {
+    width: 45%; /* Cambia el ancho en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 3rem; /* Reduce el tamaño del texto del encabezado */
+  }
+  
+  .home-content {
+    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+    align-items: center;
+  }
+  
+  .nav {
+    flex-direction: column; /* Cambia a columna para el nav en pantallas pequeñas */
+    padding: 1rem; /* Reduce el padding */
+  }
+
+  ul {
+    flex-direction: column; /* Cambia el menú de navegación a columna */
+    gap: 1rem; /* Ajusta el espacio entre los elementos del menú */
+  }
+
+  .features-container {
+    flex-direction: column; /* Cambia a columna */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .feature {
+    width: 90%; /* Cambia a 90% en pantallas pequeñas */
+  }
+  
+  #testimonios h2, #faqs h2 {
+    font-size: 2rem; /* Ajusta tamaño del título */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container h1 {
+    font-size: 2.5rem; /* Reduce aún más el tamaño del texto del encabezado */
+  }
+  
+  .footer-section {
+    text-align: center; /* Centra el texto del pie de página */
+  }
+  
+  .footer-section h3 {
+    font-size: 1.3em; /* Reduce el tamaño del título del footer */
+  }
 }
