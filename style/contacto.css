@@ -1,0 +1,255 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header con navegación */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.logo p {
+  color: rgb(255, 255, 255);
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #0056b3;
+}
+/*Parte Principal del contacto*/
+.contact-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #000000, #ffffff);
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  color: #000000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form:hover,
+.contact-info:hover {
+  transform: translateY(-10px);
+}
+
+.contact-form h3,
+.contact-info h3 {
+  color: #000000;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #000000;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #feb47b;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #000000;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin: 10px 0;
+}
+
+.contact-info ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.contact-info ul li a:hover {
+  color: #feb47b;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  font-size: 1em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #42e695;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #42e695;
+}
+
+/* Redes sociales */
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+  transform: scale(1.2);
+}
+
+/* Derechos reservados */
+.footer-section p:last-child {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

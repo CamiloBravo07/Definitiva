@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2 {
+    color: #3bb2b8;
+}
+
+h3 {
+    color: #42e695;
+}
+
+p, ul {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #42e695;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header con navegación */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .logo p {
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #0056b3;
+  }
+
+/* Sección de Detalles del Servicio */
+.service-detail {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-detail p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.service-detail img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.service-detail ul li {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 0;
+    font-size: 1em;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #42e695;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #42e695;
+  }
+  
+  /* Redes sociales */
+  .social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media a:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Derechos reservados */
+  .footer-section p:last-child {
+    font-size: 0.8em;
+    color: #aaa;
+  }
+  
+  /* Media Queries para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .social-media {
+      justify-content: center;
+    }
+  }

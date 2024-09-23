@@ -1,0 +1,327 @@
+:root {
+  --text-color--: #2d9cdb;
+  --text-color-blend--: #03055b;
+  --back-up-color--: #e7faf9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(/img/camiones.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  padding: 2rem 5rem 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 27px;
+  color: #ffff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+li a {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  transition: 0.6s;
+}
+
+li a:hover {
+  background-color: var(--text-color--);
+}
+
+.active {
+  background-color: var(--text-color--);
+}
+
+button {
+  border: 2px solid var(--back-up-color--);
+  background: transparent;
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--back-up-color--);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: var(--back-up-color--);
+  color: #000;
+}
+
+/*Contenido Hero*/
+.home-content {
+  padding: 2rem 5rem 2rem 5rem;
+  display: flex;
+  align-items: center;
+  height: 83vh;
+}
+
+.home-container {
+  align-items: center;
+  width: 600px;
+}
+
+.home-container h1 {
+  color: #fff;
+  font-size: 5rem;
+  padding-bottom: 30px;
+}
+
+.home-container p {
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+
+/* Sección ¿Por qué elegirnos? */
+#porque-elegirnos {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+#porque-elegirnos h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #e5f8ff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 22%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  background-color: #cceeff;
+}
+
+.feature .icon {
+  margin-bottom: 15px;
+}
+
+.feature .icon img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  color: #0072c6;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Estilos para Sección de Testimonios */
+#testimonios {
+  background-color: #2d9cdb;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#testimonios h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Estilos para Sección de FAQs */
+#faqs {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#faqs h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #2d9cdb;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.faq {
+  background-color: #f4f4f4;
+  border-left: 5px solid #2d9cdb;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.faq:hover {
+  background-color: #e6f7ff;
+}
+
+.faq h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  font-size: 1em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #42e695;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #42e695;
+}
+
+/* Redes sociales */
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+  transform: scale(1.2);
+}
+
+/* Derechos reservados */
+.footer-section p:last-child {
+  font-size: 0.8em;
+  color: #aaa;
+}
