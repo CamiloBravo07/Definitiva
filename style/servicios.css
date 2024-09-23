@@ -61,6 +61,7 @@ body {
   color: #000000;
   margin-bottom: 40px;
 }
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -172,4 +173,80 @@ body {
 .footer-section p:last-child {
   font-size: 0.8em;
   color: #aaa;
+}
+
+/* Media Queries */
+
+/* Para tablets (pantallas entre 600px y 900px) */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .services-section h2 {
+    font-size: 2.5em;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Para móviles (pantallas de hasta 600px) */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 1em;
+  }
+
+  .services-section h2 {
+    font-size: 2em;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 1.5em;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
 }
