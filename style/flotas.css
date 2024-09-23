@@ -177,72 +177,74 @@ a:hover {
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
   .header {
-      flex-direction: column; /* Cambia a columna para móviles */
-      align-items: flex-start; /* Alinea a la izquierda */
-      padding: 10px 5%; /* Padding para mayor espacio */
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 10px 5%; 
+      align-items: center;
+      justify-content: center;
   }
 
   .nav-menu ul {
-      flex-direction: column; /* Cambia a columna para móviles */
-      gap: 10px; /* Espacio entre elementos de navegación */
+      flex-direction: column; 
+      gap: 10px; 
   }
 
   .service-detail {
-      padding: 30px 10px; /* Reduce el padding */
+      padding: 30px 10px; 
   }
 
   .service-detail h2 {
-      font-size: 2em; /* Ajusta el tamaño del título */
+      font-size: 2em; 
   }
 
   .service-detail p {
-      font-size: 1.1em; /* Ajusta el tamaño del texto */
+      font-size: 1.1em; 
   }
 
   .footer {
-      padding: 20px 0; /* Ajusta el padding */
+      padding: 20px 0; 
   }
 
   .footer-container {
-      flex-direction: column; /* Apila las secciones del footer */
-      align-items: center; /* Centra las secciones */
-      max-width: 100%; /* Asegúrate de que ocupe el 100% en móviles */
+      flex-direction: column; 
+      align-items: center; 
+      max-width: 100%; 
   }
 
   .footer-section {
-      width: 100%; /* Hace que las secciones del footer ocupen el 100% */
-      text-align: center; /* Centra el texto */
-      margin: 10px 0; /* Ajusta el margen */
+      width: 100%; 
+      text-align: center; 
+      margin: 10px 0; 
   }
 
   .footer-section h3 {
-      font-size: 1.3em; /* Ajusta el tamaño del texto del footer */
+      font-size: 1.3em; 
   }
 }
 
 @media (max-width: 480px) {
   .header {
-      padding: 10px 2%; /* Padding para mayor espacio */
+      padding: 10px 2%; 
   }
 
   .nav-menu ul {
-      gap: 5px; /* Reduce el espacio entre elementos */
+      gap: 5px; 
   }
 
   .service-detail h2 {
-      font-size: 1.5em; /* Ajusta el tamaño del título para pantallas pequeñas */
+      font-size: 1.5em; 
   }
 
   .service-detail p {
-      font-size: 1em; /* Ajusta el tamaño del texto para pantallas pequeñas */
+      font-size: 1em; 
   }
 
   .footer-section h3 {
-      font-size: 1.2em; /* Ajusta el tamaño del texto del footer */
+      font-size: 1.2em; 
   }
 
   .footer-section p,
   .footer-section ul {
-      font-size: 0.8em; /* Ajusta el tamaño del texto del footer */
+      font-size: 0.8em;
   }
 }
