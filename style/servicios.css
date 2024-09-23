@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 35px 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(90, 89, 89);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
 }
@@ -100,7 +100,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #000000;
+  background-color: #585858;
   color: white;
   padding: 40px 0;
   font-size: 1em;
